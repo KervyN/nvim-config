@@ -1,3 +1,6 @@
+if true then
+  return {}
+end
 return {
   { "catppuccin/nvim", name = "catppuccin", lazy = false, priority = 1000 },
   -- Configure LazyVim to load catppuccin
