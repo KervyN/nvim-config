@@ -5,8 +5,10 @@ vim.keymap.set("n", "<Tab>", "<cmd>bnext<cr>", { desc = "Go to next open buffer"
 vim.keymap.set("n", "<leader>bd", "<cmd>bd<cr>", { desc = "Close current buffer" })
 
 -- Yank to system clipboard
-vim.keymap.set("n", "<leader>Y", '"*yy')
-vim.keymap.set("n", "<leader>y", '"*y')
+vim.keymap.set("n", "<leader>Y", '"+Y')
+vim.keymap.set("v", "<leader>Y", '"+Y')
+vim.keymap.set("v", "<leader>y", '"+y')
+vim.keymap.set("n", "<leader>y", '"+y')
 
 -- Diagnostic keymaps
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous [D]iagnostic message" })
